@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>panditwala</title>
+
+  
+  
+  <meta content="nidho" name="author">
+
+</head><body>
+<form onsubmit="return vf()" action="panditwala5.html" method="post" name="regForm"><br>
+Panditwala<br>
+  <br>
+  <br>
+  <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top;">FirstName<br>
+        </td>
+        <td style="vertical-align: top;"><input name="fname"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Last Name</td>
+        <td style="vertical-align: top;"><input name="lname"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Email<br>
+        </td>
+        <td style="vertical-align: top;"><input name="email"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Password<br>
+        </td>
+        <td style="vertical-align: top;"><input name="pass" type="password"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">confirm Password<br>
+        </td>
+        <td style="vertical-align: top;"><input name="cpass" type="password"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Address<br>
+        </td>
+        <td style="vertical-align: top;"><textarea cols="35" rows="3" name="Address"></textarea></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">City<br>
+        </td>
+        <td style="vertical-align: top;">
+        <select name="city">
+        <option value="">select city</option>
+        <option>Surat</option>
+        <option>Rajkot</option>
+        <option>Canada</option>
+        <option>Dubai</option>
+        <option></option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Gender<br>
+        </td>
+        <td style="vertical-align: top;"><input checked="checked" value="0" name="gender" type="radio">male <input value="1" name="gender" type="radio"> female <input value="2" name="gender" type="radio">&nbsp; other<br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Hobby<br>
+        </td>
+        <td style="vertical-align: top;"><input value="0" name="hobby" type="checkbox">&nbsp; Reading&nbsp; <input value="1" name="hobby" type="checkbox">&nbsp; Dancing&nbsp; <input value="2" name="hobby" type="checkbox">&nbsp; Writing<br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Date Of Birth<br>
+        </td>
+        <td style="vertical-align: top;">
+        <input name="bdate" type = "date"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Birth Time<br>
+        </td>
+        <td style="vertical-align: top;"><input name="btime" type = "time"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Contact No.<br>
+        </td>
+        <td style="vertical-align: top;"><input name="mob"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Pincode<br>
+        </td>
+        <td style="vertical-align: top;"><input name="pcode"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;"><br>
+        </td>
+        <td style="vertical-align: top;"><input name="submit" type="submit">&nbsp;&nbsp; <input name="khali karo" type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+</form>
+
+<script>
+          function vf()
+          {
+                var f1 = document.regForm;
+                
+                /*var fn = f1.fname;
+                if (!fn.value)
+                {
+                    alert("First name is necessary");
+                    fn.focus();
+                    return false;
+                }
+                
+                 var ln = f1.lname;
+                if (!ln.value)
+                {
+                    alert("Last name is necessary");
+                    ln.focus();
+                    return false;
+                }
+                
+                var em = f1.email;
+                if (!em.value)
+                {
+                    alert("Email is necessary");
+                    em.focus();
+                    return false;
+                }
+                
+                var p = f1.pass;
+                if (!p.value)
+                {
+                    alert("Password is necessary");
+                    p.focus();
+                    return false;
+                }
+                
+                var cp = f1.cpass;
+                if (!cp.value)
+                {
+                    alert("C Password is necessary");
+                    cp.focus();
+                    return false;
+                }
+				
+			if (p.value != cp.value)
+                {
+                    alert("Password & C Password must be same");
+                    cp.focus();
+                    return false;
+                }*/
+				
+			var bt = f1.btime;
+                if (!bt.value)
+                {
+                    alert("Birth time is necessary");
+                    bt.focus();
+                    return false;
+                }
+                
+                
+                
+                
+                
+          
+                alert("Wahh baki/baka wahh");
+                return false;
+          }
+</script>
+</body></html>

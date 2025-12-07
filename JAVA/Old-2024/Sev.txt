@@ -1,0 +1,19 @@
+ ParentClass
+	- properties
+	- void display()
+	- void setDetails(2 parameter)
+	- void setDetails(1 parameter)
+	- Getter/Setter
+	
+ChildClass extends ParentClass
+	- properties for child class
+	- void show()
+		- super.display();
+	- void setAttributes(parentPropertiesArguments + selfPropertiesArguments) 3 parameter
+		- super.setDetails(parentPropertiesArguments ); 2 parameters
+	- void setAttributes(parentPropertiesArguments / selfPropertiesArguments)	1 parameter
+		- super.setDetails(parentPropertiesArguments );
+	- Getter/Setter
+	
+main:
+	- 2/3 Object of ChildClass

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Validation for Empty Value</title>
+	</head>
+
+	<body>
+		<form name="regForm" onsubmit="return vf();" method="POST">
+			Mobile Number: <input name="mob"><br>
+			<input value="Save" type="submit"><br>
+		</form>
+		<script>
+			function vf()
+			{
+				var f1 = document.regForm;
+				console.log("JSK");
+
+				var m = f1.mob;
+				var mobile = m.value;
+				if (!mobile || isNaN(mobile) || mobile.length != 10)
+				{
+					alert("Valid 10 digit mobile # is necessary");
+					m.focus();
+					return false;
+				}
+				
+				alert("Wahhh baka wahhhh");
+				
+				return false;
+			}
+		</script>
+	</body>
+</html>
+

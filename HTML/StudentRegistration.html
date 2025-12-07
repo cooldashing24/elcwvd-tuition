@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Student Registration</title>
+
+  
+  
+  <meta content="VD" name="author">
+
+</head><body>
+<form onsubmit="return validate()" method="get" action="StudentRegistration.html" name="regForm"><br>
+  <br>
+  <br>
+  <table style="text-align: left; width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top;">First name<br>
+        </td>
+        <td style="vertical-align: top;"><input name="fname"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Last name<br>
+        </td>
+        <td style="vertical-align: top;"><input name="lname"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Email<br>
+        </td>
+        <td style="vertical-align: top;"><input name="email"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Password<br>
+        </td>
+        <td style="vertical-align: top;"><input name="pass" type="password"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Confirm password<br>
+        </td>
+        <td style="vertical-align: top;"><input name="cpass" type="password"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Birthdate<br>
+        </td>
+        <td style="vertical-align: top;"><input name="bdate" type="date"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Birthtime<br>
+        </td>
+        <td style="vertical-align: top;"><input name="btime" type="time"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Mobile #<br>
+        </td>
+        <td style="vertical-align: top;"><input name="mob" type="number"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Address<br>
+        </td>
+        <td style="vertical-align: top;"><textarea cols="30" rows="3" name="add"></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Gender<br>
+        </td>
+        <td style="vertical-align: top;"><input value="male" name="gender" type="radio">&nbsp; Male&nbsp; <input value="female" name="gender" type="radio">&nbsp; Female<br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">City<br>
+        </td>
+        <td style="vertical-align: top;">
+        <select name="city">
+        <option value="">Select city</option>
+        <option>surat</option>
+        <option>rajkot</option>
+        <option>daman</option>
+        </select>
+        <br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Hobbies<br>
+        </td>
+        <td style="vertical-align: top;"><input value="0" name="hobby" type="checkbox"> Reading <input value="1" name="hobby" type="checkbox">
+Swimming <input value="2" name="hobby" type="checkbox"> Dancing<br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;">Pincode<br>
+        </td>
+        <td style="vertical-align: top;"><input name="pcode"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;"><br>
+        </td>
+        <td style="vertical-align: top;"><input value="Submit" name="Submit" type="submit">&nbsp;&nbsp;&nbsp; <input value="reset" name="reset" type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</form>
+
+<script>
+  function validate()
+  {
+      var f1 = document.regForm;
+
+      /*var fn = f1.fname;
+      if (!fn.value)
+      {
+          alert("First name is jaruri");
+          fn.focus();
+          return false;
+      }
+      
+      var g = f1.gender;
+      if (!g.value)
+      {
+          alert("Gender jaruri 6e");
+          g[0].focus();
+          return false;
+      }*/
+      
+      var h = f1.hobby;
+       if (!h[0].checked && !h[1].checked && !h[2].checked)
+      {
+          alert("Boring manas");
+          return false;
+      }
+      
+      var p = f1.pass;
+      var cp = f1.cpass;
+      if (!p.value || p.value != cp.value)
+      {
+          alert("Confirm password & password must match and is jaruri");
+          p.focus();
+          return false;
+      }
+      
+      var ct = f1.city;
+      if (!ct.value)
+      {
+          alert("City jaruri 6e");
+          ct.focus();
+          return false;
+      }
+      
+      var pc = f1.pcode;
+      if (!pc.value || isNaN(pc.value) || pc.value.length != 6)
+      {
+          alert("6 digit valid pincode  is necessary");
+          pc.focus();
+          return false;
+      }
+      
+      /*
+          First name
+                    Last name
+                    Email
+                    Password
+                            Confirm Password
+                    City
+                    Gender
+                    Address
+                    Birthdate
+                    Birthtime
+                    Pincode
+                                Mobile
+                                
+            Hobbies
+          
+        
+      */
+      
+    alert("Saved");
+    return false;
+  }
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+

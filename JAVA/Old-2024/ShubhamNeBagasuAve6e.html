@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Form Validation</title>
+	</head>
+	
+	<body>
+		<form name="regForm" method="POST" onsubmit="return validateForm();">
+			First Name: <input name="fname"> <br>
+			Last naam: <input name="lname"> <br>
+			Mobile #: <input name="mob"> <br>
+			<input value="Save" type="Submit"> <br>
+		</form>
+		<script>
+			function validateForm()
+			{
+				var f1 = document.regForm;
+				var fn = f1.fname;
+				if (!fn.value)
+				{
+					alert("First name is necessary");
+					fn.focus();
+					return false;
+				}
+				
+				var ln = f1.lname;
+				if (!ln.value)
+				{
+					alert("Last name is necessary");
+					ln.focus();
+					return false;
+				}
+				
+				var m = f1.mob;
+				if (!m.value || isNaN(m.value) || m.value.length != 10)
+				{
+					alert("Valid 10 digit mobile # is necessary");
+					m.focus();
+					return false;
+				}
+			
+				alert("Wahhh Baka Wahhhh");
+				return false;
+			}
+		</script>
+	</body>
+</html>

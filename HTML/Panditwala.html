@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Windows version 5.6.0">
+  <meta content="text/html; charset=utf-8" http-equiv=
+  "content-type">
+  <title>Panditwala</title>
+  <meta content="Rishi Pandit" name="author">
+</head>
+<body>
+  <form onsubmit="return vf()" method="get" action=
+  "Panditwala.html" name="regForm" id="regForm">
+    <br>
+    Panditwala - Setting check kari apvama avse<br>
+    <br>
+    <table style="text-align: left; width: 100%;" border="1"
+    cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top;">First name<br></td>
+          <td style="vertical-align: top;"><input name=
+          "fname"><br></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Last name<br></td>
+          <td style="vertical-align: top;"><input name=
+          "lname"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Gender<br></td>
+          <td style="vertical-align: top;"><input value="male"
+          name="gender" type="radio"> Male&nbsp; <input value="1"
+          name="gender" type="radio"> Female&nbsp; <input value=
+          "other" name="gender" type="radio"> Other<br></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Email<br></td>
+          <td style="vertical-align: top;"><input name=
+          "email"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Password<br></td>
+          <td style="vertical-align: top;"><input name="pass" type=
+          "password"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Confirm
+          password<br></td>
+          <td style="vertical-align: top;"><input name="cpass"
+          type="password"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Birth date<br></td>
+          <td style="vertical-align: top;">
+          <input name="bdate" type="date"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Birth time<br></td>
+          <td style="vertical-align: top;">
+          <input name="btime" type="time"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Pincode<br></td>
+          <td style="vertical-align: top;">
+          <input name="pcode" maxlength="6"></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">City<br></td>
+          <td style="vertical-align: top;"><select name="City">
+            <option value="">
+              select city
+            </option>
+            <option>
+              Surat
+            </option>
+            <option>
+              Rajkot
+            </option>
+            <option>
+              Jamnagar
+            </option>
+            <option>
+              Ravan tad
+            </option>
+          </select><br></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Address<br></td>
+          <td style="vertical-align: top;">
+          <textarea cols="25" rows="5" name=
+          "Address"></textarea><br></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Hobbies<br></td>
+          <td style="vertical-align: top;"><input value="0" name=
+          "hobby" type="checkbox"> Reading <input value="1" name=
+          "hobby" type="checkbox"> Sleeping <input value="2" name=
+          "hobby" type="checkbox"> Singing <input value="3" name=
+          "hobby" type="checkbox"> Cooking<br></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Mobile number<br></td>
+          <td style="vertical-align: top;">
+            <input name="mob"  maxlength="10">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Ratings<br></td>
+          <td style="vertical-align: top;">
+            <input name="rating" type="range" min="0" max="10">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><br></td>
+          <td style="vertical-align: top;"><input value="Save"
+          name="Save" type="submit"> <input value="Chal futt" name=
+          "Chal futt" type="reset"></td>
+        </tr>
+      </tbody>
+    </table><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </form>
+  <script>
+  function vf()
+  {
+  
+      var f1 = document.regForm;
+      
+      /*var fn = f1.fname;
+      if (!fn.value)
+      {
+          alert("First name vagarr kai saru lage baka!");
+          fn.focus();
+          return false;
+      }
+      
+      var ln = f1.lname;
+      if (!ln.value)
+      {
+          alert("Last name vagarr kai saru lage baka!");
+          ln.focus();
+          return false;
+      }
+      
+      var em = f1.email;
+      if (!em.value)
+      {
+          alert("Email is necessary!");
+          em.focus();
+          return false;
+      }
+      
+      var p = f1.pass;
+      if (!p.value)
+      {
+          alert("Password is necessary!");
+          p.focus();
+          return false;
+      }
+      
+      var cp = f1.cpass;        // For confirm password
+      if (cp.value != p.value)
+      {
+          alert("Password & Confirm Password must be same!");
+          cp.focus();
+          return false;
+      }
+      
+      var bd = f1.bdate;
+      if (!bd.value)
+      {
+          alert("Birthdate is necessary!");
+          bd.focus();
+          return false;
+      }
+      
+      var bt = f1.btime;
+      if (!bt.value)
+      {
+        alert("Birthtime is necessary!");
+        bt.focus();
+        return false;
+      }
+      
+      var ct = f1.City;
+      if (!ct.value)
+      {
+        alert("City is necessary!");
+        ct.focus();
+        return false;
+      }
+      
+      var ad = f1.Address;
+      if (!ad.value)
+      {
+        alert("Surnamu jaruri 6e!");
+        ad.focus();
+        return false;
+      }
+      
+      var pc = f1.pcode;
+      if (!pc.value || isNaN(pc.value) || pc.value.length != 6)
+      {
+        alert("6 digit valid pincode is necessary!");
+        pc.focus();
+        return false;
+      }
+      
+      var m = f1.mob;
+      if (!m.value || isNaN(m.value) || m.value.length != 10)
+      {
+        alert("10 digit valid mobile number is necessary!");
+        m.focus();
+        return false;
+      }
+      //if (!g[0].checked && !g[1].checked && !g[2].checked)
+      */
+      
+      var g = f1.gender;
+      if (!g.value)
+      {
+        alert("Gender is necessary!");
+        g[0].focus();
+        return false;
+      }
+      
+      var h = f1.hobby;
+      if (!h[0].checked && !h[1].checked && !h[2].checked && !h[3].checked)
+      {
+        alert("Hobby is necessary!");
+        return false;
+      }
+          
+    alert("Your data has been saved succ.....");
+    return false;   
+    
+  
+  }
+  </script>
+</body>
+</html>

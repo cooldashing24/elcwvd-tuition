@@ -47,7 +47,7 @@ class GregorianCalendarDemo
 	public static void main(String []args)
 	{
 		GregorianCalendar gc1 = new GregorianCalendar();
-		//System.out.println(gc1);
+		System.out.println(gc1);
 		display(gc1);
 		
 		GregorianCalendar gc2 = new GregorianCalendar(2008, 8, 4);

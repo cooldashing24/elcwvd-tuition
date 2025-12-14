@@ -54,7 +54,7 @@ class GregorianCalendarDemo
 		//System.out.println(gc2);
 		display(gc2);
 		
-		GregorianCalendar gc3 = new GregorianCalendar(2008, 4, 15, 8, 30, 44);
+		GregorianCalendar gc3 = new GregorianCalendar(2025, 40, 5, 8, 30, 440000000);
 		//System.out.println(gc3);
 		display(gc3);
 

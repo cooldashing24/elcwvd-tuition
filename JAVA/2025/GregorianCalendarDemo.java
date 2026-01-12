@@ -15,33 +15,35 @@ class GregorianCalendarDemo
 		//2:18:55 PM
 		
         int wk = gc.get(gc.DAY_OF_WEEK);
-        switch (wk) 
+	String weekday = gc.getDisplayName(gc.DAY_OF_WEEK, gc.LONG, Locale.ENGLISH);
+        System.out.println("Day: " + weekday);
+		switch (wk) 
 		{
-            case 1:
-                System.out.println("Sunday");
-                break;
-            case 2:
-                System.out.println("Monday");
-                break;
-            case 3:
-                System.out.println("Tuesday");
-                break;
-            case 4:
-                System.out.println("Wednesday");
-                break;
-            case 5:
-                System.out.println("Thursday");
-                break;
-            case 6:
-                System.out.println("Friday");
-                break;
-            case 7:
-                System.out.println("Saturday");
-                break;
-            default:
-                System.out.println("Invalid");
-                break;
-        }
+		    case 1:
+			System.out.println("Sunday");
+			break;
+		    case 2:
+			System.out.println("Monday");
+			break;
+		    case 3:
+			System.out.println("Tuesday");
+			break;
+		    case 4:
+			System.out.println("Wednesday");
+			break;
+		    case 5:
+			System.out.println("Thursday");
+			break;
+		    case 6:
+			System.out.println("Friday");
+			break;
+		    case 7:
+			System.out.println("Saturday");
+			break;
+		    default:
+			System.out.println("Invalid");
+			break;
+		}
 	}
 	
 	public static void main(String []args)
@@ -50,7 +52,7 @@ class GregorianCalendarDemo
 		//System.out.println(gc1);
 		display(gc1);
 		
-		GregorianCalendar gc2 = new GregorianCalendar(2008, 8, 4);
+		GregorianCalendar gc2 = new GregorianCalendar(2008, 8, 4, 10, 32, 52);
 		//System.out.println(gc2);
 		display(gc2);
 		

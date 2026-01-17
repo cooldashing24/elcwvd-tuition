@@ -1,14 +1,15 @@
 // Matrix Addition
-#define ROWS 2
-#define COLS 3
+#define ROWS 3
+#define COLS 2
 #include<stdio.h>
 
 int main()
 {
     int i, j;
     float x[ROWS][COLS] = {
-        {2.1, 2.6, 3.3},
-        {6.6, 7.8, 0.1},
+        {2.1, 2.6},
+        {6.6, 7.8},
+        {4.6, 8.8},
     };
 
     // Array X

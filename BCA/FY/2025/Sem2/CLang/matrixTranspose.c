@@ -1,4 +1,4 @@
-// Matrix Addition
+// Matrix's Transpose
 #define ROWS 3
 #define COLS 2
 #include<stdio.h>
